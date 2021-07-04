@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical"
+    tools:context=".InfoFragment">
+
+    <RelativeLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/titleInfo"
+            style="@style/TitleStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Information" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/headerHowItWorks"
+            style="@style/HeadlineStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleInfo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="How it works" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyHowItWorks"
+            style="@style/BodyStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerHowItWorks"
+            android:layout_marginStart="10dp"
+            android:maxHeight="150dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_how_it_works" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/headerTypes"
+            style="@style/HeadlineStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bodyHowItWorks"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Types of Ingredients" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyTypes"
+            style="@style/BodyStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"
+            android:layout_below="@+id/headerTypes"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_types"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/headerFeedback"
+            style="@style/HeadlineStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bodyTypes"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Feedback" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bodyFeedback"
+            style="@style/BodyStandard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerFeedback"
+            android:layout_above="@id/btnViewIngredients"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/text_feedback"
+            android:textStyle="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewIngredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:minHeight="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="View\nIngredients" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:minHeight="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentEnd="true"
+            android:text="View Custom\nIngredients" />
+    </RelativeLayout>
+
+</FrameLayout>

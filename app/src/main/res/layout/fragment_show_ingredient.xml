@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShowIngredientFragment"
+    android:id="@+id/showIngredientLayout">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titleIngredient"
+        style="@style/TitleStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Ingredient" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/btnRemove"
+        android:text="Remove Ingredient"
+        android:backgroundTint="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_below="@id/titleIngredient"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblName"
+        style="@style/HeadlineStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleIngredient"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="bottom"
+        android:minWidth="200dp"
+        android:text="Name:" />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textName"
+        style="@style/BodyStandard"
+        android:layout_alignBottom="@+id/lblName"
+        android:gravity="bottom"
+        android:layout_toEndOf="@+id/lblType"
+        android:layout_marginStart="10dp"
+        android:minWidth="200dp"
+        android:text="name"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblType"
+        style="@style/HeadlineStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textType"
+        android:layout_marginStart="10dp"
+        android:gravity="bottom"
+        android:minWidth="200dp"
+        android:text="Type:" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textType"
+        style="@style/BodyStandard"
+        android:layout_below="@+id/textName"
+        android:layout_marginTop="40dp"
+        android:gravity="bottom"
+        android:layout_toEndOf="@+id/lblType"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxWidth="200dp"
+        android:text="type"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblDescription"
+        style="@style/HeadlineStandard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textType"
+        android:layout_marginStart="10dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="40dp"
+        android:text="Description:" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescription"
+        style="@style/BodyStandard"
+        android:layout_below="@+id/lblDescription"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="200dp"
+        android:text="description"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:minWidth="130dp"
+        android:minHeight="80dp"
+        android:text="Back"
+        app:icon="@drawable/back_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="60dp"
+        />
+
+</RelativeLayout>

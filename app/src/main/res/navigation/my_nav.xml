@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.textdemo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.textdemo.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/importFragment"
+        android:name="com.example.textdemo.ScanFragment"
+        android:label="fragment_import"
+        tools:layout="@layout/fragment_scan" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.textdemo.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/IngredientListFragment"
+        android:name="com.example.textdemo.IngredientsListFragment"
+        android:label="fragment_ingredients_list"
+        tools:layout="@layout/fragment_ingredients_list" />
+    <fragment
+        android:id="@+id/showIngredientFragment"
+        android:name="com.example.textdemo.ShowIngredientFragment"
+        android:label="fragment_show_ingredient"
+        tools:layout="@layout/fragment_show_ingredient" />
+</navigation>

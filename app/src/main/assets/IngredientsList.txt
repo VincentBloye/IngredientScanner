@@ -1,0 +1,81 @@
+Milk
+1
+Produced by female mammals.
+Egg
+1
+Produced by female birds.
+Whey
+1
+Liquid remaining after milk has been curdled in production of cheese.
+Isinglass
+2
+A substance obtained from the dried swim bladders of fish.
+Gelatine
+0
+Usually derived from collagen taken from animals.
+Albumen
+1
+Coagulating agent, usually derived from egg whites.
+Honeycomb
+1
+natural product made by bees.
+Blood
+0
+Derived from slaughtered animals.
+Carmine
+0
+Red pigment derived from crushed female cochineal insect.
+Cochineal
+0
+Red pigment derived from crushed female cochineal insect.
+Carminic Acid
+0
+Red pigment derived from crushed female cochineal insect.
+Casein
+1
+Milk protein often used as supplement.
+Caseinate
+1
+Milk protein often used as supplement.
+Sodium Caseinate
+1
+Milk protein often used as supplement.
+Cod
+2
+Species of fish.
+Marine Oil
+2
+Oils derived from various species of fish.
+Beef
+0
+Meat derived from cow, bull or ox.
+Pork
+0
+Meat derived from pigs.
+Chicken
+0
+Species of bird.
+Oyster
+2
+Species of crustacean.
+Rennet
+0
+Enzyme from calves' stomachs often used in cheesemaking.
+Rennin
+0
+Enzyme from calves' stomachs often used in cheesemaking.
+Vitamin D
+3
+Vitamin derived from multiple sources including fish liver oil, egg yolks and plant sources.
+Vitamin A
+3
+Vitamin derived from multiple sources including fish liver oil, egg yolks and plant sources.
+E120
+0
+Red pigment derived from crushed female cochineal insect.
+E901
+1
+Beeswax - product created by bees.
+E1105
+1
+Derived from eggs.

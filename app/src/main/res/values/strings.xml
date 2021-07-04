@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Ingredient Scan</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_title">Settings</string>
+    <string name="tooltip_diet">Select whether you are Vegan, Vegetarian or Pescatarian</string>
+    <string name="tooltip_colourblind">Select this to replace any Red with magenta</string>
+    <string name="tooltip_text_colour">Select your preferred colour for text</string>
+    <string name="tooltip_background_colour">Select your preferred background colour</string>
+    <string name="tooltip_text_size">Select standard or large text</string>
+    <string name="text_how_it_works">
+        This application works by taking a picture of an ingredients list
+        on a food product, the ingredients are then analysed and checked
+        against a database of ingredients that or not suitable for vegans,
+        vegetarians and pescatarians, depending on your chosen preference
+        in the settings page.
+    </string>
+    <string name="text_types"><b>Vegan:</b>
+        These are ingredients that are not derived from animals.\n<b>Vegetarian:</b>
+        These are ingredients that include no meat or fish products.\n<b>Pescatarian:</b>
+        These are ingredients that contain no meat products.
+    </string>
+    <string name="text_feedback">
+        To provide feedback on accessibility, our ingredients database or the app as a whole please email <u>feedback@emailaddress.com</u>.
+    </string>
+    <string name="text_home">
+        To start scanning ingredients simply click the Scan Now button below to capture an image or
+        import a saved image. For best results crop image to ingredients list.\n\nTo add new ingredients or change your dietary preference and accessibility settings click the Settings button below.\n\nTo
+        see more information including a list of all our known ingredients click the More Info button.
+    </string>
+    <string-array name="array_diet">
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Pescatarian</item>
+    </string-array>
+    <string-array name="array_text_colour">
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="array_background_colour">
+        <item>White</item>
+        <item>Grey</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="array_text_size">
+        <item>Standard</item>
+        <item>Large</item>
+    </string-array>
+
+</resources>

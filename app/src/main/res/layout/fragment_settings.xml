@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    tools:context=".SettingsFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titleSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/settings_title"
+        style="@style/HeadlineStandard"
+        android:textSize="28dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblDiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/dropdownDiet"
+        android:text="Dietary Requirements"
+        android:tooltipText="@string/tooltip_diet"
+        android:layout_toStartOf="@id/dropdownDiet"
+        android:drawableEnd="@drawable/info_icon_primary"
+        style="@style/BodyStandard" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdownDiet"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/titleSettings">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dropdownDiet"
+            android:layout_alignTop="@+id/dropdownDiet"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="@color/colorTextBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblTextColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/dropdownTextColour"
+        android:text="Text Colour"
+        android:tooltipText="@string/tooltip_text_colour"
+        android:layout_toStartOf="@id/dropdownDiet"
+        android:drawableEnd="@drawable/info_icon_primary"
+        style="@style/BodyStandard" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdownTextColour"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/dropdownDiet">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTextColour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dropdownTextColour"
+            android:layout_alignTop="@+id/dropdownTextColour"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="@color/colorTextBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblBackgroundColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/dropdownBackgroundColour"
+        android:text="Background Colour"
+        android:tooltipText="@string/tooltip_background_colour"
+        android:layout_toStartOf="@id/dropdownDiet"
+        android:drawableEnd="@drawable/info_icon_primary"
+        style="@style/BodyStandard" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdownBackgroundColour"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/dropdownTextColour">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBackgroundColour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dropdownBackgroundColour"
+            android:layout_alignTop="@+id/dropdownBackgroundColour"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="@color/colorTextBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/dropdownTextSize"
+        android:text="Text Size"
+        android:tooltipText="@string/tooltip_text_size"
+        android:layout_toStartOf="@id/dropdownDiet"
+        android:drawableEnd="@drawable/info_icon_primary"
+        style="@style/BodyStandard" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdownTextSize"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:minWidth="200dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/dropdownBackgroundColour">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dropdownTextSize"
+            android:layout_alignTop="@+id/dropdownTextSize"
+            android:enabled="false"
+            android:inputType="none"
+            android:textColor="@color/colorTextBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lblColourblind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/switchColourblind"
+        android:text="Colourblind Mode"
+        android:tooltipText="@string/tooltip_colourblind"
+        android:layout_toStartOf="@id/dropdownDiet"
+        android:drawableEnd="@drawable/info_icon_primary"
+        style="@style/BodyStandard" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchColourblind"
+        android:layout_width="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/dropdownTextSize"
+        android:layout_marginTop="45dp"
+        style="@style/BodyStandard"
+        android:tooltipText="@string/tooltip_colourblind" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textAddIngredient"
+        android:layout_width="wrap_content"
+        android:minWidth="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+       android:layout_below="@id/switchColourblind"
+        android:layout_above="@id/btnViewCustomIngredients"
+        android:hint="Add Custom Ingredients"
+        android:inputType="textCapSentences"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddIngredient"
+        android:layout_width="wrap_content"
+        android:minWidth="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textAddIngredient"
+        android:layout_toEndOf="@id/textAddIngredient"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Add"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewCustomIngredients"
+        android:layout_width="match_parent"
+        android:minWidth="100dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="View Custom Ingredients"/>
+
+
+</RelativeLayout>
